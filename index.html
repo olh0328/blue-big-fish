@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大肥鱼课程表 隐私政策</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f5f6f8; color: #333; line-height: 1.8;
+    padding: 24px 16px;
+  }
+  .container { max-width: 760px; margin: 0 auto; background: #fff; border-radius: 12px; padding: 32px 28px; box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+  h1 { font-size: 22px; margin-bottom: 12px; }
+  .meta { color: #888; font-size: 13px; margin-bottom: 24px; }
+  h2 { font-size: 16px; margin: 24px 0 10px; color: #222; }
+  p, li { font-size: 15px; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin: 6px 0; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { border: 1px solid #e5e7eb; padding: 10px; text-align: left; vertical-align: top; }
+  th { background: #f9fafb; }
+  strong { color: #111; }
+  code { background: #f1f3f5; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+  .footer { margin-top: 32px; padding-top: 16px; border-top: 1px solid #eee; color: #999; font-size: 12px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>大肥鱼课程表 隐私政策</h1>
+  <div class="meta">生效日期：2026-11-12 · 适用版本：1.0（versionCode 58） · 包名：<code>io.today.timetable</code></div>
+
+  <h2>一、收集哪些信息</h2>
+  <p>应用不收集、不上传个人信息，也没有账号体系，不需要注册或登录。课程名、老师、教室、周次、节次、颜色，以及学期、时令、上课时间等设置项，<strong>只保存在你的设备本地，不上传到任何服务器</strong>。</p>
+  <p>与你相关的内容只有下面两类，且都留在本机：</p>
+  <ul>
+    <li><strong>你创建或导入的课表内容</strong>：课程名、老师、教室、周次、节次、颜色与各项设置。</li>
+    <li><strong>教务导入时读取的课表信息</strong>：使用内置教务页面导入功能时，应用会读取学校教务网站上你本人的在校课表内容，仅用于生成课表条目。</li>
+  </ul>
+  <p>应用无广告、无统计或分析 SDK、无第三方数据共享，也不收集设备标识、位置、通讯录、相册、剪贴板、通话记录或短信等信息。</p>
+
+  <h2>二、信息如何使用</h2>
+  <p>上述内容只用于在你的设备上显示和编辑课表，不用于其他目的。</p>
+  <ul>
+    <li>渲染周课表、今日课程与倒计时、周次切换。</li>
+    <li>按你导入的教务课表生成对应的课程条目与周次片段。</li>
+    <li>保存你的显示与时间设置，下次打开时继续使用。</li>
+  </ul>
+  <p>应用不使用这些内容做广告投放、用户画像或精准营销，也不把它们发送给开发者或任何第三方。</p>
+
+  <h2>三、权限说明</h2>
+  <p>应用在清单中声明了联网权限和外部存储写入权限，用途如下。</p>
+  <table>
+    <tr><th>权限</th><th>用途</th><th>范围说明</th></tr>
+    <tr>
+      <td><strong>INTERNET</strong> 联网</td>
+      <td>内置教务页面导入：打开学校教务网站，抓取你本人在校的课表。</td>
+      <td>请求只发往学校教务站点本身，不经过第三方服务器，也不转存到其他位置。</td>
+    </tr>
+    <tr>
+      <td><strong>WRITE_EXTERNAL_STORAGE</strong> 写入外部存储</td>
+      <td>把导入用的课表识别 JSON 和调试文件写入设备的下载目录。</td>
+      <td>清单中该权限带 maxSdkVersion 28 限制，只在 Android 9（API 28）及以下系统上声明。</td>
+    </tr>
+  </table>
+  <p>应用不申请相机、麦克风、位置、通讯录、相册等权限。不使用教务导入功能时，联网权限不会被使用。</p>
+
+  <h2>四、数据存储与删除</h2>
+  <p>课表与设置保存在应用自身的本地数据目录中，随应用一起存在你的设备上，直到你删除它们。</p>
+  <ul>
+    <li>在应用内删除单门课程，只移除该课程。</li>
+    <li>在系统设置里清除本应用的数据，会移除全部课程与设置。</li>
+    <li>卸载应用，本地数据随之删除。</li>
+  </ul>
+  <p>上述操作都在你的设备上完成，不需要向开发者申请；本地数据没有服务器端副本可以留存或恢复。</p>
+
+  <h2>五、第三方共享</h2>
+  <p>应用不向任何第三方出售、出租、共享或转让你的信息，也不接入广告、统计或分析 SDK。</p>
+  <p>唯一的对外网络请求发生在你主动使用教务导入功能时，目标是你所在学校的教务站点。学校站点自身如何处理访问记录由其自己的隐私政策约束，不在本应用的控制范围内。</p>
+
+  <h2>六、未成年人</h2>
+  <p>本应用是一个本地课表工具，不收集个人信息，也不针对未成年人提供专门内容或营销。未成年人可在监护人指导下使用。</p>
+
+  <h2>七、政策更新</h2>
+  <p>本政策的内容或生效日期发生变化时，会直接更新本页面。若涉及权限或数据使用方式的调整，会在应用版本的更新说明中一并提示。</p>
+
+  <h2>八、联系方式</h2>
+  <p>对本政策或数据处理方式有疑问，可通过下列邮箱联系开发者：</p>
+  <ul>
+    <li>联系邮箱：1283954521@qq.com</li>
+    <li>应用名称：大肥鱼课程表（包名 <code>io.today.timetable</code>）</li>
+    <li>适用版本：1.0（versionCode 58）</li>
+  </ul>
+
+  <div class="footer">大肥鱼课程表 隐私政策 · 生效日期 2026-11-12 · 适用版本 1.0（versionCode 58）</div>
+</div>
+</body>
+</html>
